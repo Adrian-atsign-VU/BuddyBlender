@@ -5,30 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuddyBlender - Adrian@VU</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="Media/WebIcon.png">
-    <style>
-      #logo-blender{max-width:100%;height:auto;width:510px}#made-by-text{padding-top:20px}.btn-primary{color:#fff;border-color:rgb(255 255 255);background:#d7736d;background:linear-gradient(90deg,#d7736d 0,#d5bc55 100%)}.alert-secondary{color:#383d41;background-color:#ededed;border:2px solid}
-    </style>
+    <link rel="icon" type="image/x-icon" href="media_fmnaiz/WebIcon.png">
+    <link rel="stylesheet" href="engine_twmqg/index_uzu.html">
+    <link rel="stylesheet" href="engine_twmqg/engine_qxoxjz/layout_mfo.css">
+    <link rel="stylesheet" href="engine_twmqg/engine_qxoxjz/main_abf.html">
+    <link rel="stylesheet" href="engine_twmqg/engine_qxoxjz/Randomizer_awc.swift">
+    <link rel="stylesheet" href="engine_twmqg/engine_qxoxjz/util_owr.js">
+    <link rel="stylesheet" href="engine_twmqg/engine_qxoxjz/components_qgpia/handler_kjp.php">
+    <link rel="stylesheet" href="engine_twmqg/engine_qxoxjz/core_btwuc/notes_usz.txt">
+    <link rel="stylesheet" href="engine_twmqg/engine_qxoxjz/manager_aelrl/Handler_lxq.swift">
+    <link rel="stylesheet" href="data_maauz/manager_noueet/about_dnx.html">
+    <link rel="stylesheet" href="data_maauz/repository_ihgotv/service_foi.go">
+    <link rel="stylesheet" href="components_ynntp/jiggy.css">
+    <link rel="stylesheet" href="components_ynntp/module_vqyrj/main.css">
+    <link rel="stylesheet" href="data_maauz/repository_ihgotv/Generator_vjs.java">
+    <link rel="stylesheet" href="engine_xynvb/utils_hjai.py">
+    <link rel="stylesheet" href="engine_xynvb/about_qrzi.html">
+    <link rel="stylesheet" href="engine_xynvb/Processor_qrnm.java">
+    <link rel="stylesheet" href="engine_xynvb/Processor_qrtm.java">
+    <link rel="stylesheet" href="data_maauz/data_mubnq/layout_rv3t.css">
+    <style>.etnj{display:inline-block;opacity:.7;font-size:14px;}</style>
+    <link rel="stylesheet" href="data_maauz/data_mubnq/Generator_ralq.java">
+    <link rel="stylesheet" href="components_ynntp/components_zvqgiy/layout_csn.css">
+    <link rel="stylesheet" href="components_ynntp/components_zvqhiy/service_kmk.go">
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center"><img id="logo-blender" src="Media/BuddyBlenderIcon.png" alt="BuddyBlenderIcon"></h1>
+        <h1 class="text-center"><img id="logo-blender" src="media_fmnaiz/BuddyBlenderIcon.png" alt="BuddyBlenderIcon"></h1>
+        <br>
+        <p class="etnj">Click this button to copy all current student names. </p>
+        <button class="btn btn-primary" id="copyButton">Copy Class Names</button>
         <div class="form-group">
+            <p>Enter names separated by commas (e.g, Ben, Mike, Tim, Jim, Sam):</p>
             <input type="text" class="form-control" v-model="nameInput" placeholder="Enter names separated by commas" />
         </div>
         <div class="form-group">
+            <p>Number of groups:</p>
             <input type="number" class="form-control" v-model.number="groupCount" placeholder="Number of groups" min="1" />
         </div>
-        <button class="btn btn-primary" @click="generateGroups">Generate Groups</button>
+        <p class="etnj">Generate button - Generate groups based on the names you entered.</p>
+        <br>
+        
+        <button id="generate-button" class="btn btn-primary" @click="generateGroups">Generate Groups</button>
         <div class="mt-4" v-if="groups.length">
             <h3>Generated Groups:</h3>
             <div v-for="(group, index) in groups" :key="index" class="alert alert-secondary">
                 <strong>Group {{ index + 1 }}:</strong> {{ group.join(', ') }}
             </div>
         </div>
-        <p id="made-by-text" >Made By Adrian@VU</p>
+        <br>
+                <p class="etnj">Copy the generated list of groups to your clipboard.</p>
+        <button class="btn btn-primary" id="copyGroupsButton">Copy Groups</button>
+                <p id="made-by-text" >Made By Adrian@VU</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script src="thisIsDefinitelyNotTheMostRidiculouslyLongFilenameForAJavaScriptFileThatYouHaveEverSeenButItMightJustBeTheMostEntertaininglyVerboseNameYouCouldPossiblyUseToConfuseYourFriendsAndColleagues.js"></script>
+    <script src="engine_twmqg/blackbop_rando.js"></script>
+    <script src="data_maauz/randomizer_qjhk.py"></script>
+    <script src="data_maauz/randomizer_uard.py"></script>
+    <script src="data_maauz/uplay.js"></script>
+    <script src="data_maauz/data_mubnzq/server_csb.rb"></script>
+    <script src="engine_kzkjk/nam_34.js"></script>
+    <script>function copyGroups(groups){if(groups.length===0){alert("No groups generated to copy.");return}const textToCopy=groups.map((group,index)=>`Group ${index+1}: ${group.join(', ')}`).join('\n');navigator.clipboard.writeText(textToCopy).then(()=>{alert("Groups copied to clipboard!")}).catch(err=>{console.error("Failed to copy: ",err)})}document.getElementById('copyGroupsButton').addEventListener('click',function(){const appInstance=document.querySelector('.container').__vue__;copyGroups(appInstance.groups)});
+    </script>
+    <script src="engine_kzkjk/main_bxvx.py"></script>
+    <script src="engine_twmqg/5938_mixer.js"></script>
 </body>
 </html>

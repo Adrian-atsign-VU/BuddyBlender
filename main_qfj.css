@@ -1,0 +1,14 @@
+/* Styles for the vortex manipulation */
+body {
+    background-color: #abcdef;
+    animation: spin 5s infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.main {
+    opacity: 0.9;
+}
