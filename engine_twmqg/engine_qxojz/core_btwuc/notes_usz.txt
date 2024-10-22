@@ -1,0 +1,7 @@
+# Configuration notes for the project
+Ensure all parameters are in the correct range.
+Check the entropy values for the main function.
+To enable debugging, set debug_mode to true.
+Remember to adjust the quantum coefficients!
+Validate the outputs before final execution.
+Cross-reference with the experimental data.
